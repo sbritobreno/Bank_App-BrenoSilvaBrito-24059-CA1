@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC121483-713E-447D-A4EE-F7D78255BF71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CA1</RootNamespace>
+    <AssemblyName>CA1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExecTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\ExecTransaction.Designer.cs">
+      <DependentUpon>ExecTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SavingTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\SavingTransaction.Designer.cs">
+      <DependentUpon>SavingTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CurrentTransactionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\CurrentTransactionHistory.Designer.cs">
+      <DependentUpon>CurrentTransactionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SavingTransactionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\SavingTransactionHistory.Designer.cs">
+      <DependentUpon>SavingTransactionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Models\BankApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\BankApplication.Designer.cs">
+      <DependentUpon>BankApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\DeleteAccount.Designer.cs">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmployeeTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\EmployeeTasks.Designer.cs">
+      <DependentUpon>EmployeeTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\NewAccount.Designer.cs">
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewCustomer.cs" />
+    <Compile Include="Models\CurrentTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\CurrentTransaction.Designer.cs">
+      <DependentUpon>CurrentTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Models\BankApplication.resx">
+      <DependentUpon>BankApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\DeleteAccount.resx">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\EmployeeTasks.resx">
+      <DependentUpon>EmployeeTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\ExecTransaction.resx">
+      <DependentUpon>ExecTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\NewAccount.resx">
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\CurrentTransaction.resx">
+      <DependentUpon>CurrentTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\SavingTransaction.resx">
+      <DependentUpon>SavingTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\CurrentTransactionHistory.resx">
+      <DependentUpon>CurrentTransactionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\SavingTransactionHistory.resx">
+      <DependentUpon>SavingTransactionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Accounts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
